@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { Divider } from "@mui/material";
+import Heading from "./Components/Heading/Heading";
+import SearchAppBar from "./Components/NavBar/SearchAppBar";
+import Content from "./Components/Content/Content";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <SearchAppBar />
+      <Heading title="Taniti Village" subtitle="Adventure awaits you..."/>
+      <Content />
+      <Divider sx={{ margin: "1rem" }} />
+      <Footer />
+    </>
   );
 }
 
